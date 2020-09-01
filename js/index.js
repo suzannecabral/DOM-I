@@ -71,12 +71,20 @@ headerButton.innerHTML = siteContent['cta']['button'];
 //navbar
 
 const navbar = document.querySelectorAll('nav a');
-navbar[1].innerHTML = siteContent['nav']['nav-item-1'];
-navbar[2].innerHTML = siteContent['nav']['nav-item-2'];
-navbar[3].innerHTML = siteContent['nav']['nav-item-3'];
-navbar[4].innerHTML = siteContent['nav']['nav-item-4'];
-navbar[5].innerHTML = siteContent['nav']['nav-item-5'];
-navbar[6].innerHTML = siteContent['nav']['nav-item-6'];
+navbar[0].innerHTML = siteContent['nav']['nav-item-1'];
+navbar[1].innerHTML = siteContent['nav']['nav-item-2'];
+navbar[2].innerHTML = siteContent['nav']['nav-item-3'];
+navbar[3].innerHTML = siteContent['nav']['nav-item-4'];
+navbar[4].innerHTML = siteContent['nav']['nav-item-5'];
+navbar[5].innerHTML = siteContent['nav']['nav-item-6'];
 
+const allContent = document.querySelectorAll('.text-content');
+// allContent[1] is the first .text-content div
+
+
+// 1st .text-content h4 = 1st h4
+
+
+// 1st .text-content p = 1st p
 
 
