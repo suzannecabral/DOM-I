@@ -40,3 +40,25 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+//header image
+const headerImage = document.querySelector('#cta-img');
+headerImage.setAttribute('src','img/header-img.png');
+headerImage.setAttribute('style','display:inline-block;');
+
+
+//accent image
+const accentImage = document.querySelector('#middle-img');
+accentImage.setAttribute('src','img/mid-page-accent.jpg');
+
+
+//header h1
+const headerText = document.querySelector('h1');
+headerText.innerHTML = 'Dom is Awesome';
+//NOTE: setting .innerHTML uses an equals ='asdf';  not a paren ('asdf');
+
+//header button
+const headerButton = document.querySelector('.cta-text button');
+headerButton.innerHTML = 'Get Started';
+console.log(headerText);
