@@ -103,6 +103,17 @@ allContentPara[3].innerHTML = siteContent['main-content']['product-content'];
 allContentPara[4].innerHTML = siteContent['main-content']['vision-content'];
 
 
+//contact info
+
+const contactHeader = document.querySelector('.contact h4');
+contactHeader.innerHTML = siteContent['contact']['contact-h4'];
+
+const contactParaAll = document.querySelectorAll('.contact p');
+contactParaAll[0].innerHTML = siteContent['contact']['address'];
+contactParaAll[1].innerHTML = siteContent['contact']['phone'];
+contactParaAll[2].innerHTML = siteContent['contact']['email'];
 
 
-
+//copyright
+const copyright = document.querySelector('footer p');
+copyright.innerHTML = siteContent['footer']['copyright'];
