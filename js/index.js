@@ -77,12 +77,75 @@ navbar[3].innerHTML = siteContent['nav']['nav-item-4'];
 navbar[4].innerHTML = siteContent['nav']['nav-item-5'];
 navbar[5].innerHTML = siteContent['nav']['nav-item-6'];
 
+
+
 //color
+navbar.forEach(item => item.classList.add('green'));
+
 
 //make style changes before adding to the navbar
 //if prepend first, hardcode indexes in
 
 //append & prepend new items
+
+// //-------------try 4
+// function to reduce repetition
+
+
+
+// //-------------try 3
+// //this works!
+
+// where to put links:
+const parentElem = document.querySelector('nav');
+
+//create link elements in memory
+const newLink1 = document.createElement('a');
+newLink1.href = '#';
+newLink1.innerHTML = 'Home';
+newLink1.classList.add('green');
+
+const newLink2 = document.createElement('a');
+newLink2.href = '#';
+newLink2.innerHTML = 'Team';
+newLink2.classList.add('green');
+
+//add newly created links to dom
+parentElem.prepend(newLink1);
+parentElem.appendChild(newLink2);
+
+
+
+
+
+// //-------------try 2
+// const node = document.createElement('a');
+// const textnode = document.createTextNode('Visit');
+// node.appendChild(textNode);
+// navbar.appendChild(node);
+
+
+
+//-------------try 1
+// //new nav item
+// function newLink (linkText){
+//   document.createElement('a');
+//   a.innerHTML = linkText;
+//   a.href = '#';
+// }
+
+// //prepend "Home"
+// const linkHome = newLink('Home');
+// nav.prepend(linkHome);
+
+
+// //append "Visit"
+// const linkVisit = newLink('Visit');
+// nav.append(linkVisit)
+
+
+
+
 
 
 // allContent headers
@@ -104,7 +167,6 @@ allContentPara[4].innerHTML = siteContent['main-content']['vision-content'];
 
 
 //contact info
-
 const contactHeader = document.querySelector('.contact h4');
 contactHeader.innerHTML = siteContent['contact']['contact-h4'];
 
