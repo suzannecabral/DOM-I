@@ -69,7 +69,6 @@ headerButton.innerHTML = siteContent['cta']['button'];
 
 
 //navbar
-
 const navbar = document.querySelectorAll('nav a');
 navbar[0].innerHTML = siteContent['nav']['nav-item-1'];
 navbar[1].innerHTML = siteContent['nav']['nav-item-2'];
@@ -78,13 +77,32 @@ navbar[3].innerHTML = siteContent['nav']['nav-item-4'];
 navbar[4].innerHTML = siteContent['nav']['nav-item-5'];
 navbar[5].innerHTML = siteContent['nav']['nav-item-6'];
 
-const allContent = document.querySelectorAll('.text-content');
-// allContent[1] is the first .text-content div
+//color
+
+//make style changes before adding to the navbar
+//if prepend first, hardcode indexes in
+
+//append & prepend new items
 
 
-// 1st .text-content h4 = 1st h4
+// allContent headers
+const allContentHead = document.querySelectorAll('.text-content h4');
+allContentHead[0].innerHTML = siteContent['main-content']['features-h4'];
+allContentHead[1].innerHTML = siteContent['main-content']['about-h4'];
+allContentHead[2].innerHTML = siteContent['main-content']['services-h4'];
+allContentHead[3].innerHTML = siteContent['main-content']['product-h4'];
+allContentHead[4].innerHTML = siteContent['main-content']['vision-h4'];
 
 
-// 1st .text-content p = 1st p
+// allContent p
+const allContentPara = document.querySelectorAll('.text-content p');
+allContentPara[0].innerHTML = siteContent['main-content']['features-content'];
+allContentPara[1].innerHTML = siteContent['main-content']['about-content'];
+allContentPara[2].innerHTML = siteContent['main-content']['services-content'];
+allContentPara[3].innerHTML = siteContent['main-content']['product-content'];
+allContentPara[4].innerHTML = siteContent['main-content']['vision-content'];
+
+
+
 
 
