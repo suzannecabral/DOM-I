@@ -41,24 +41,42 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+//----------------------------------------------------
+// My work starts here
+//----------------------------------------------------
+
 
 //header image
 const headerImage = document.querySelector('#cta-img');
-headerImage.setAttribute('src','img/header-img.png');
-headerImage.setAttribute('style','display:inline-block;');
-
+headerImage.src = siteContent['cta']['img-src'];
+headerImage.style = 'display:inline-block;';
 
 //accent image
 const accentImage = document.querySelector('#middle-img');
-accentImage.setAttribute('src','img/mid-page-accent.jpg');
+accentImage.src = siteContent['main-content']['middle-img-src'];
+
+
 
 
 //header h1
 const headerText = document.querySelector('h1');
-headerText.innerHTML = 'Dom is Awesome';
+headerText.innerHTML = siteContent["cta"]["h1"];
 //NOTE: setting .innerHTML uses an equals ='asdf';  not a paren ('asdf');
 
 //header button
 const headerButton = document.querySelector('.cta-text button');
-headerButton.innerHTML = 'Get Started';
-console.log(headerText);
+headerButton.innerHTML = siteContent['cta']['button'];
+
+
+//navbar
+
+const navbar = document.querySelectorAll('nav a');
+navbar[1].innerHTML = siteContent['nav']['nav-item-1'];
+navbar[2].innerHTML = siteContent['nav']['nav-item-2'];
+navbar[3].innerHTML = siteContent['nav']['nav-item-3'];
+navbar[4].innerHTML = siteContent['nav']['nav-item-4'];
+navbar[5].innerHTML = siteContent['nav']['nav-item-5'];
+navbar[6].innerHTML = siteContent['nav']['nav-item-6'];
+
+
+
